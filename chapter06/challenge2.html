@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script>
+      /* Write a “higher or lower” game. The computer should pick a random number between 1 and 10, then ask the user if the next number will be higher using a confirm box. The computer should then choose another random number between 1 and 10 and tell the user if they were right or wrong. */
+
+      // get a number between 1 and 10
+      const randomNumber = Math.floor(Math.random() * (11 - 1) + 1);
+      const isNextNumberHigher = confirm(`The current number is ${randomNumber}. Will the next number be higher?`);
+      const nextRandomNumber = Math.floor(Math.random() * (11 - 1) + 1);
+      
+      if (nextRandomNumber > randomNumber) {
+        alert(`You were right! The next number is ${nextRandomNumber}`);
+      } else {
+        alert(`You were wrong! The next number is ${nextRandomNumber}`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6</title>
+  </head>
+  <body>
+    <script>
+      const big = confirm("Is it a big animal?");
+      const livesInWater = confirm("Does it live in water?");
+      if (big && livesInWater) {
+        alert("Your favorite animal is a whale!");
+      } else if (big && !livesInWater) {
+        alert("Your favorite animal is an elephant!");
+      } else if (!big && livesInWater) {
+        alert("Your favorite animal is a fish!");
+      } else {
+        alert("Your favorite animal is a mouse!");
+      }
+    </script>
+  </body>
+</html>
