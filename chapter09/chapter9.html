@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9</title>
+  </head>
+  <body>
+    <script>
+      const square = {
+        sides: 4,
+        length: 5,
+        preimeter: 20,
+        area: 25
+      };
+      const duck = {
+        name: "Quacky",
+        legs: 2,
+
+        quack() {
+          alert("Quack! Quack!");
+        }
+      };
+      const alfie = {
+        name: "Alfie",
+        picture: "🧑‍💼",
+        glasses: false,
+        hat: false
+      };
+      const name = "Dumbo";
+      const legs = 4;
+      const fly = height => console.log("Fly, fly away! " + height + " meters!");
+      const elephant = {name, legs, fly};
+
+      console.log(elephant.name);
+      console.log(elephant["name"]);
+      const info = "name";
+      console.log(elephant[info]);
+      console.log(elephant.arms);
+      console.log("arms" in elephant);
+      console.log("legs" in elephant);
+      elephant.fly(5);
+      elephant["fly"](6);
+      elephant.ears = 2;
+      console.log(elephant);
+      elephant.name = "Elmer";
+      console.log(elephant.name);
+      delete elephant.fly;
+      console.log(elephant);
+    </script>
+  </body>
+</html>

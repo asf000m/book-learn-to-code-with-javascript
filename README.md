@@ -10,3 +10,6 @@
 <h3>Chapter 4: Numbers</h3>
 <h3>Chapter 5: Collections</h3>
 <h3>Chapter 6: Logic - <em>Completed</em></h3>
+<h3>Chapter 7: Going Loopy</h3>
+<h3>Chapter 8: Functions</h3>
+<h3>Chapter 9: Objects</h3>
