@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+  </head>
+  <body>
+    <script>
+      console.log('Hello'.charAt(1));
+      console.log('Hello'[0]);
+      console.log('Hello'.indexOf('l'));
+      console.log('Hello'.indexOf('r'));
+      console.log('Hello'.lastIndexOf('l'));
+      console.log('Hello'.includes('llo'));
+      console.log('Hello'.includes(','));
+      console.log('Hello'.startsWith('h'));
+      console.log('Hello'.startsWith('H'));
+      console.log('Hello'.endsWith('!'));
+      console.log('Hello'.endsWith('o'));
+
+      console.log('Hello'.length);
+      console.log(''.length);
+      const myString = "Hello, is it me you're looking for?";
+      console.log(myString.length);
+
+      console.log('Java' + 'Script');
+      console.log('Hello' + 'World');
+      console.log('Hello ' + 'World');
+      console.log('Java'.concat('Script'));
+
+      const name = prompt('What is your name?');
+      alert('Hello ' + name + '.\nThe first letter of your name is ' + name[0] + ' and the last letter is ' + name[name.length - 1]);
+
+      const language = 'JavaScript';
+      console.log(language);
+      console.log(language.toUpperCase());
+      console.log(language.toLowerCase());
+
+      console.log('       Hello    World                         '.trim());
+      console.log('\t\t\t\n     JavaScript!     \n     \r\r\t\t'.trim());
+      console.log('\t\t\t\n     JavaScript!     \n     \r\r\t\t'.trimStart());
+      console.log('       Hello    World                         '.trimEnd());
+
+      console.log(`Hello, ${language}!`);
+
+      const animal = prompt('Please enter an animal.');
+      const color = prompt('Please enter a color.');
+      const verb = prompt('Please enter a verb.');
+      const job = prompt('Please enter a job.');
+      const madlib = `The ${animal} wanted to be a ${job}, but turned a funny shade of ${color} after trying to ${verb}!`;
+      alert(madlib);
+    </script>
+  </body>
+</html>

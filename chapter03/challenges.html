@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+  </head>
+  <body>
+    <script>
+      const name = prompt('Please enter your name.');
+      const message = `Hello, ${name}! Welcome to JavaScript!`;
+      alert(message);
+
+      alert(`Your name has ${name.length} letters!`);
+
+      const firstName = prompt('Please enter your first name.');
+      const swappyName = firstName[firstName.length - 1].toUpperCase() + firstName.slice(1, firstName.length - 1) + firstName[0].toLowerCase();
+      alert(`Hello ${firstName}, your swappy name is ${swappyName}`);
+    </script>
+  </body>
+</html>
