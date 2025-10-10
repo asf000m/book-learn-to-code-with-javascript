@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+  </head>
+  <body>
+    <script>
+      // 1.
+      const game = {
+        title: 'battlefield 6',
+        releaseDate: '2025-10-10',
+        genre: 'fps',
+        publisher: 'electronic arts',
+        multiplayer: true,
+        onPc: true,
+        onPs5: true,
+        onXbox: true,
+        onSwitch: false
+      }
+      
+      const person = {
+        firstName: 'asafe',
+        lastName: 'maia',
+        birthDate: '1999-08-21',
+        age: 26,
+        country: 'brazil',
+        job: 'frontend developer',
+        race: 'mixed'
+      }
+
+      // 2.
+      const betty = {
+        name: 'betty',
+        picture: '🧙‍♀️',
+        glasses: true,
+        hat: true
+      }
+      const gemma = {
+        name: 'gemma',
+        picture: '👩‍🍳',
+        glasses: false,
+        hat: true
+      }
+      const del = {
+        name: 'del',
+        picture: '👨‍🏫',
+        glasses: true,
+        hat: false
+      }
+
+      // 3.
+      const circle = {
+        radius: 3,
+
+        circumference() {
+          return 2 * Math.PI * this.radius;
+        },
+        area() {
+          return Math.PI * this.radius ** 2;
+        }
+      }
+
+      // 4.
+      const list = {
+        items: [],
+
+        add(item) {
+          this.items.push(item);
+        },
+        remove(item) {
+          this.items.splice(this.items.indexOf(item), 1);
+        }
+      }
+    </script>
+  </body>
+</html>

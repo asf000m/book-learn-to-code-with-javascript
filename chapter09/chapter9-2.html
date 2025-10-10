@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9</title>
+  </head>
+  <body>
+    <script>
+      const shapes = {
+        triangle: {sides: 3},
+        square: {sides: 4},
+        pentagon: {sides: 5},
+        hexagon: {sides: 6},
+        octagon: {sides: 8},
+        megagon: {sides: 10e6},
+      }
+
+      const square = {
+        sides: 4,
+        length: 5,
+        
+        perimeter() {
+          return this.sides * this.length
+        },
+        area() {
+          return this.length * this.length
+        }
+      }
+
+      const dice = {
+        sides: 6,
+        
+        roll() {
+          return Math.ceil(Math.random() * this.sides);
+        }
+      }
+    </script>
+  </body>
+</html>

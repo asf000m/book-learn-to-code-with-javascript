@@ -12,4 +12,4 @@
 <h3>Chapter 6: Logic - <em>Completed</em></h3>
 <h3>Chapter 7: Going Loopy</h3>
 <h3>Chapter 8: Functions</h3>
-<h3>Chapter 9: Objects</h3>
+<h3>Chapter 9: Objects - <em>Completed 2025-10-09</em></h3>
