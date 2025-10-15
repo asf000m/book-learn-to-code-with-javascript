@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenges</title>
+  </head>
+  <body>
+    <script>
+      // 1.
+      let userAge = Number(prompt('Enter your age in years'));
+      alert(`You'll be ${userAge + 25} years old in 25 years`);
+      // 2.
+      let n1 = Number(prompt('Enter the first number'));
+      let n2 = Number(prompt('Enter the second number'));
+      alert(`${n1} x ${n2} = ${n1 * n2}`);
+      // 3.
+      let mealPrice = Number(prompt('Enter the price of the meal'));
+      let people = Number(prompt('Enter how many people'));
+      let tip = Number(prompt('Enter the percentage of the tip')) / 100;
+      let priceEach = (mealPrice * (1 + tip)) / people;
+      alert(priceEach);
+      // 4.
+      let randNumber = Math.ceil(Math.random() * (10 - 5) + 5);
+      console.log(randNumber);
+    </script>
+  </body>
+</html>

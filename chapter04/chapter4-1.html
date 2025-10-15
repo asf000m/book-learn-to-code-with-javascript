@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 4</title>
+  </head>
+  <body>
+    <script>
+      console.log(typeof 84, typeof 3.14159);
+      console.log(9, -8.4415);
+      console.log(4e4, 9e12, 2.4e-4);
+      console.log('hello' * 4, typeof NaN);
+      console.log(10 + 89.3, 6 - 54, 8 * 9, 4/2, 9 ** 2, (4 + 4)  * 9 / 3);
+      
+      let score = 0;
+      console.log(score);
+      score = score + 20;
+      console.log(score);
+      score += 5;
+      console.log(score);
+      score -= 2;
+      console.log(score);
+      score *= 6;
+      console.log(score);
+      score /= 3;
+      console.log(score);
+      score **= 2;
+      console.log(score);
+      score %= 6;
+      console.log(score);
+
+      let points = 5;
+      console.log(points++);
+      console.log(points);
+      console.log(++points);
+      console.log(points);
+      console.log(points--);
+      console.log(points);
+      console.log(--points);
+
+      const ageInYears = Number(prompt('How old are you (in years)?'));
+      const ageInSecods = ageInYears * 365.25 * 24 * 60 * 60;
+      alert(`That means you have been alive for at least ${ageInSecods} seconds!`);
+
+      console.log(Number('26'));
+      console.log(Number('hello, world!'));
+      console.log(String(3));
+
+      console.log(Math.random());
+      console.log(Math.ceil(Math.random() * 6));
+      const sides = prompt('How many sides does the dice have?');
+      alert('Press Enter or click close to roll the dice...');
+      const number = Math.ceil(sides * Math.random());
+      alert(`The dice landed on the number ${number}`);
+    </script>
+  </body>
+</html>
