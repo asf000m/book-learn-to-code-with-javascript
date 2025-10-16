@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 5</title>
+  </head>
+  <body>
+    <script>
+      const shopping = ['Apple', 'Banana', 'Cupcake'];
+      shopping[3] = 'Donut';
+      shopping[2] = 'Carrot';
+      shopping[5] = 'Eggplant';
+      delete shopping[3];
+      const length = shopping.length;
+      
+      const shopping2 = ['apple', 'banana', 'carrot', 'donut', 'eggplant'];
+      
+      const arrayA = [1, 2, 3];
+      const arrayB = [arrayA];
+      const arrayC = [...arrayA];
+
+      const fruit = ['pineapple', 'melon'];
+      const savory = ['burger', 'fries'];
+      const sweets = ['cookie', 'popcorn'];
+      let food = [...fruit, ...savory, ...sweets];
+      food = [...food, 'coffee'];
+      food = ['coconut', ...food];
+
+      const coordinates = [[1, 3], [4, 2]];
+
+      const summer = ['jun', 'jul', 'aug'];
+      const winter = ['dec', 'jan', 'feb'];
+      const nested = [summer, winter];
+
+      const flat = [...summer, ...winter];
+    </script>
+  </body>
+</html>

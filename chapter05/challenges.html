@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Challenges</title>
+  </head>
+  <body>
+    <script>
+      // 1.
+      let shoppingList = [];
+      let fruits = ['banana', 'avocado', 'apple', 'orange'];
+      shoppingList.push('chicken', 'egg');
+      console.log(shoppingList);
+      shoppingList.unshift(...fruits);
+      console.log(shoppingList);
+      shoppingList.splice(4, 1, 'bread');
+      console.log(shoppingList);
+      shoppingList.pop();
+      console.log(shoppingList);
+      shoppingList.shift();
+      console.log(shoppingList);
+      // 2.
+      let words = [];
+      words.push(prompt('2.\nEnter a new word'));
+      words.push(prompt('Enter a new word'));
+      words.push(prompt('Enter a new word'));
+      alert(words.join(', '));
+      // 3.
+      let word = prompt('3.\nEnter a word');
+      let wordArr = word.split("");
+      let wordReverse = wordArr.reverse().join("");
+      alert(wordReverse);
+      // 4.
+      let namesStr = prompt('4.\nEnter a list of comma-separated names');
+      let namesArr = namesStr.split(', ').sort();
+      alert(namesArr.join(', '));
+    </script>
+  </body>
+</html>

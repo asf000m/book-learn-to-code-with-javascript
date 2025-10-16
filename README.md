@@ -8,7 +8,7 @@
 <h3>Chapter 2: Programming Basics - <em>Completed 2025-10-07</em></h3>
 <h3>Chapter 3: Letters and Words - <em>Completed 2025-10-07</em></h3>
 <h3>Chapter 4: Numbers - <em>Completed 2025-10-14</em></h3>
-<h3>Chapter 5: Collections</h3>
+<h3>Chapter 5: Collections - <em>Completed 2025-10-15</em></h3>
 <h3>Chapter 6: Logic - <em>Completed</em></h3>
 <h3>Chapter 7: Going Loopy</h3>
 <h3>Chapter 8: Functions</h3>
