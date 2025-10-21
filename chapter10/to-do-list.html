@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Simple To-do List</title>
+  <style>
+    body {
+      font-size: 2rem;
+    }
+    .complete {
+      text-decoration: line-through;
+      color: darkgray;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // add tasks
+    function add(item) {
+      const li = document.createElement('li');
+      li.innerHTML = item;
+      list.appendChild(li);
+    }
+    // toggle class complete
+    function toggle(item) {
+      item.classList.toggle('complete');
+    }
+    // destroy a task
+    function destroy(item) {
+      item.remove();
+    }
+
+    const list = document.createElement('ul');
+    document.body.appendChild(list);
+  </script>
+</body>
+</html>

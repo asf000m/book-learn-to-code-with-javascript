@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chapter 10</title>
+    <style>
+      .fruit {
+        font-family: cursive;
+        font-size: 1.25rem;
+      }
+      .veg {
+        font-family: serif;
+        font-size: 1.25rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="greeting">Hello, <em>World!</em></h1>
+
+    <ul id="food">
+      <li class="fruit"><span>🍎</span> Apple</li>
+      <li class="fruit"><span>🍌</span> Banana</li>
+      <li class="veg"><span>🥕</span> Carrot</li>
+    </ul>
+
+    <script>
+      const hello = document.getElementById('greeting');
+      const name = prompt('What is your name?');
+      hello.innerHTML = `Hello, <em>${name}!</em>`;
+
+      const food = document.getElementById('food');
+
+      const foodItems = document.getElementsByTagName('li');
+
+      const fruit = document.getElementsByClassName('fruit');
+
+      const fruits = document.querySelectorAll('.fruit');
+      const carrotQuery = document.querySelector('ul#food li:last-child');
+
+      const apple = food.children[0];
+      const banana = food.children[1];
+      const carrot = food.children[2];
+
+      const melon = document.createElement('li');
+      melon.innerHTML = `<span>🍉</span>Melon`;
+
+      food.appendChild(melon);
+
+      const broccoli = document.createElement('li');
+      const text = document.createTextNode(' Broccoli');
+      const span = document.createElement('span');
+      const emoji = document.createTextNode('🥦');
+
+      span.appendChild(emoji);
+      broccoli.appendChild(span);
+      broccoli.appendChild(text);
+
+      food.insertBefore(broccoli, apple);
+    </script>
+  </body>
+</html>
