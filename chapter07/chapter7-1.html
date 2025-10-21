@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 7</title>
+  </head>
+  <body>
+    <script>
+      let bottles = 10;
+      while (bottles > 0) {
+        console.log(`There were ${bottles} green bottles, hanging on a wall.\nAnd if one green bottle should accidentally fall,\nthere'd be ${bottles - 1} green bottles hanging on the wall.`);
+        bottles--;
+      }
+
+      let bottles2 = 20;
+      do {
+        console.log(`There were ${bottles2} green bottles, hanging on a wall.\nAnd if one green bottle should accidentally fall,\nthere'd be ${bottles2 - 1} green bottles hanging on the wall.`);
+        bottles2--;
+      } while (bottles2 > 0)
+
+      for (let bottles3 = 5; bottles3 > 0; bottles3--) {
+        console.log(`There were ${bottles3} green bottles, hanging on a wall.\nAnd if one green bottle should accidentally fall,\nthere'd be ${bottles3 - 1} green bottles hanging on the wall.`);
+      }
+
+      // outer loop
+      for (let i = 1; i < 13; i++) {
+        // inner loop
+        for (let j = 1; j < 13; j++) {
+          console.log(`${i} multiplied by ${j} is ${i * j}`);
+        }
+      }
+    </script>
+  </body>
+</html>

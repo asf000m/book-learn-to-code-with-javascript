@@ -10,7 +10,7 @@
 <h3>Chapter 4: Numbers - <em>Completed 2025-10-14</em></h3>
 <h3>Chapter 5: Collections - <em>Completed 2025-10-15</em></h3>
 <h3>Chapter 6: Logic - <em>Completed 2025-09-09</em></h3>
-<h3>Chapter 7: Going Loopy</h3>
+<h3>Chapter 7: Going Loopy - <em>Completed 2025-10-21</em></h3>
 <h3>Chapter 8: Functions</h3>
 <h3>Chapter 9: Objects - <em>Completed 2025-10-09</em></h3>
 <h3>Chapter 10: The Document Object Model - <em>Completed 2025-10-20</em></h3>
