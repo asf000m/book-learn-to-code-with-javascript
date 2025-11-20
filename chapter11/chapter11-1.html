@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11 </title>
+</head>
+<body>
+  <button id="red">Red</button>
+  <button id="green">Purple</button>
+  
+  <p>Enter your name in the box below:</p>
+  <form name="myForm">
+    <input type="text" name="myName">
+    <button type="submit">Submit</button>
+  </form>
+  <div id='hello'></div>
+
+  <script>
+    function bang() {
+      document.body.style.background = 'yellow';
+      document.body.innerHTML = `<h1>BANG!!!</h1>`;
+    }
+
+    
+    // document.addEventListener('click', bang);
+    
+    const redButton = document.getElementById('red');
+    redButton.addEventListener('click', event => document.body.style.background = 'red');
+    
+    const greenButton = document.getElementById('green');
+    greenButton.addEventListener('click', event => document.body.style.background = event.target.textContent);
+
+    function sayHello(event) {
+      event.preventDefault();
+      helloDiv.textContent = `Hello, ${form.myName.value}!`;
+    }
+    
+    const form = document.forms.myForm;
+    const helloDiv = document.getElementById('hello');
+    form.addEventListener('submit', sayHello);
+
+    document.addEventListener('keydown', event => document.body.innerHTML = `<div>event.code: ${event.code}</div><div>event.key: ${event.key}</div>`);
+  </script>
+</body>
+</html>

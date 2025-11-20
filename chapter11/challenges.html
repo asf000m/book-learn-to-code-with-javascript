@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn to Code With JavaScript">
+  <title>Chapter 11 - Challenges</title>
+  <style>
+    .complete {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple To-Do List</h1>
+  <form name="addTask">
+    <input id="newTask" type="text" name="newTask">
+    <button id="addButton" type="submit">Add</button>
+  </form>
+
+  <ul id="list"></ul>
+
+  <script>
+    function addTask(event) {
+      event.preventDefault();
+
+      // Create an list item and append to the list with the text from the input
+      const task = document.createElement('li');
+      task.textContent = form.newTask.value;
+      list.appendChild(task);
+      
+      // Clear the input and give it focus
+      const newTaskInput = document.querySelector('#newTask');
+      newTaskInput.value = '';
+      list.focus();
+    }
+
+    function strikeTask(event) {
+      // Strike through the item in the list
+      event.target.style.textDecoration = 'line-through';
+    }
+
+    const list = document.getElementById('list');
+    const form = document.forms.addTask;
+
+    form.addEventListener('submit', addTask);
+    list.addEventListener('click', strikeTask);
+  </script>
+</body>
+</html>

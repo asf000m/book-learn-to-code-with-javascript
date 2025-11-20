@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 11 - Live Input</title>
+  <style>
+    #output {
+      font-size: 3rem;
+      color: lightcoral;
+    }
+    #star {
+      font-size: 64px;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <input id="input">
+  <div id="output"></div>
+
+  <div id="star">⭐</div>
+  
+  <script>
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+
+    input.addEventListener('keyup', event => output.textContent = input.value);
+
+    function showCoords(event) {
+      document.body.textContent = `(${event.x},${event.y})`;
+    }
+    // document.addEventListener('mousemove', showCoords);
+
+    const bomb = document.createElement('div');
+    bomb.textContent = '💣';
+    bomb.style.position = 'absolute';
+    bomb.style.top = Math.floor(200 * Math.random()) + 'px';
+    bomb.style.left = Math.floor(200 * Math.random()) + 'px';
+    bomb.style.fontSize = '64px';
+    document.body.appendChild(bomb);
+    bomb.addEventListener('mouseover', event => {
+      document.body.style.background = 'red';
+      document.body.innerHTML = '<h1>BOOOOOM!!!</h1>';
+    });
+
+    function start(event) {
+      document.addEventListener('mousemove', move);
+    }
+
+    function stop() {
+      document.removeEventListener('mousemove', move);
+    }
+
+    function move(event) {
+      star.style.left = `${event.x}px`;
+      star.style.top = `${event.y}px`;
+    }
+
+    const star = document.querySelector('#star');
+    star.addEventListener('mousedown', start);
+    star.addEventListener('mouseup', stop);
+  </script>
+</body>
+</html>
