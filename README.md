@@ -14,3 +14,4 @@
 <h3>Chapter 8: Functions</h3>
 <h3>Chapter 9: Objects - <em>Completed 2025-10-09</em></h3>
 <h3>Chapter 10: The Document Object Model - <em>Completed 2025-10-20</em></h3>
+<h3>Chapter 11: The Main Event - <em>Completed 2025-11-20</em></h3>
