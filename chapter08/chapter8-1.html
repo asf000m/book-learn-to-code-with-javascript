@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chatpter 8 - Functions">
+  <title>Chatpter 8 - Functions</title>
+</head>
+<body>
+  <script>
+    // function hello(){
+    //   console.log('Hello, World!');
+    // }
+
+    const goodbye = function() {
+      console.log('Goodbye, World!');
+    };
+
+    const hola = () => console.log('Hola, Mundo!');
+
+    function howdy() {
+      return 'Howdy, World!';
+    }
+
+    const square = (n) => n*n;
+
+    const mean = (a, b, c) => (a + b + c) / 3;
+
+    // function hello(name='World') {
+    //   console.log(`Hello, ${name}!`);
+    // }
+
+    function discount(price, amount=10) {
+      return price * (100 - amount) / 100;
+    }
+
+    const randomInt = n => Math.ceil(Math.random() * n);
+
+    const userIsChild = function(age) {
+      if (age < 18) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>

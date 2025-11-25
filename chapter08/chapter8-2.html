@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 8 - Callbacks</title>
+</head>
+<body>
+  <script>
+    function bake(ingredients, callback) {
+      console.log(`Mix together ${ingredients}...`);
+      console.log('Bake in the oven...');
+      callback();
+    }
+
+    function eat() {
+      console.log('Eat every last crumb!');
+    }
+  </script>
+</body>
+</html>
